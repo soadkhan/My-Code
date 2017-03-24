@@ -1,0 +1,34 @@
+protected access specifier
+__________________________
+
+member of this access specifier is not accessable by DOT(.) operator.
+
+inheritance      base class    derived class
+____________________________________________________________
+public           public        public     no change        
+                 private       private    no change
+				 protected     protected  no change
+____________________________________________________________
+private         public        private   changed to private
+                protected     private   changed to private
+                private       :(        NOT ACCESSABLE
+____________________________________________________________
+protected       public        protected changed to protected
+			    protected     protected  remains   protected
+			    private       :(         NOT ACCESSABLE
+			    
+private members of base class are not accessable to derived class unless inherited in public.
+private converts to private.
+protected converts to protected.
+
+why protected is needed?
+when a member of base class is needed which is  -> not accessable by DOT(.) operator.
+												-> can be found in derived class.
+
+
+
+
+
+
+
+
